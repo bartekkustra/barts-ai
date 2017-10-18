@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="div-block">
+    <div class="div-block-2">
+      <div class="column">
+        <div class="flex-row">
+          <h2 class="heading">Best phrase:</h2>
+          <h2 id="bestphrase" class="heading phrase">...</h2>
+          <input type="text" class="inputphrase" id="phrasevalue" maxLength="26" value="webflow" placeholder="to be or not to be" /><br />
+          <button id="startai">Start AI</button>
+          <button id="stopai">Stop AI</button>
+          <button id="clearai">Clear</button>
+        </div>
+        <div class="flex-row">
+          <div>Total generations: <span id="totalgenerations">AAA</span></div>
+          <div>Average fitness: <span id="averagefitness">BBB</span></div>
+          <div>Total population: <span id="totalpopulation">CCC</span></div>
+          <div>Mutation rate: <span id="mutationrate">DDD</span></div>
+        </div>
+      </div>
+      <div class="column">
+        <div>This generation phrases:</div>
+        <div class="allphrases"><pre id="output"></pre></div>
+      </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4/lodash.min.js"></script>
+  <script src="ai.js"></script>
+  </div>
+</body>
+</html>
